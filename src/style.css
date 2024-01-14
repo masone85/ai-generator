@@ -55,13 +55,15 @@ form {
 
 .output {
   font-size: 18px;
-
   padding: 20px;
   line-height: 24px;
   border-left: 5px solid #f4dada;
   box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.09);
-  border-radius: 10px;
   color: gray;
+}
+
+.output strong {
+    color: #f4dada;
 }
 
 footer {
