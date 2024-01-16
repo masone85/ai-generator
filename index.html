@@ -15,20 +15,23 @@
         <h1>Limerick Generator 🤣</h1>
       </header>
 
-      <form id="output-generator-form">
-        <input
-          type="text"
-          placeholder="Enter topic here"
-          autofocus
-          required
-          autocomplete="off"
-          class="instructions"
-          id="user-input"
-        />
-        <input type="submit" class="submit-button" />
-      </form>
+      <div class="form-container">
+        <form id="output-generator-form">
+          <input
+            type="text"
+            placeholder="What would you like to make a limerick about?"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+            id="user-input"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="hint">e.g. Dogs, Cheese, Flowers...</div>
+      </div>
 
-      <div class="output" id="output-display"></div>
+      <div class="output hidden" id="output-display"></div>
 
       <footer>
         This AI project was coded by

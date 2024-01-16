@@ -20,17 +20,30 @@ h1 {
   color: gray;
 }
 
+.form-container {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #b8b2a6;
+  box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.09);
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
 header {
   margin-bottom: 30px;
 }
 
 form {
-  padding: 30px;
-  background-color: #b8b2a6;
-  box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.09);
-  border-radius: 10px;
   display: flex;
-  margin-bottom: 30px;
+}
+
+.hint {
+  font-size: 12px;
+  line-height: 1.5;
+  margin-top: 5px;
+  opacity: 0.5;
 }
 
 .instructions {
@@ -63,11 +76,15 @@ form {
 }
 
 .output strong {
-    color: #f4dada;
+  color: #f4dada;
 }
 
 footer {
   text-align: center;
   font-size: 13px;
   margin-top: 30px;
+}
+
+.hidden {
+    display: none;
 }

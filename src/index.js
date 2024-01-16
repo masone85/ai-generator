@@ -15,8 +15,12 @@ function generateOutput(event) {
 
   let apiKey = "af8a02404a8co87d6b9be4abdat1baf3";
   let prompt = `Generate a funny limerick about ${userInput.value}`;
-  let context = `You are a funny comedian who loves to make up funny limericks on the spot, your mission is to generate short and funny limericks in basic HTML and separate each line with a <br /> . Make sure to theme the limerick around the user input.`;
+  let context = `You are a funny comedian who loves to make up funny limericks on the spot, your mission is to generate short and funny limericks in basic HTML and always separate each line with a <br /> . Make sure to theme the limerick around the user input.`;
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+
+  let outputElement = document.querySelector("#output-display");
+  outputElement.classList.remove("hidden");
+  outputElement.innerHTML = `Wait right there! Generating your limerick about ${userInput.value}`;
 
   axios.get(apiURL).then(displayOutput);
 }
